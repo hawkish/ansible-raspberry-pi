@@ -1,0 +1,3 @@
+- name: Reload hostname
+  become: yes
+  shell: "shutdown -h now"

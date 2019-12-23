@@ -1,0 +1,9 @@
+---
+- hosts: raspberries
+  gather_facts: yes
+  become: yes
+  tasks:
+  - name: Upgrade Raspberry Pi Base system
+    apt:
+      update_cache: yes
+      upgrade: dist
