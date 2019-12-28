@@ -1,4 +1,5 @@
 ---
 - hosts: raspberries
-  tasks:
-    - ping:
+  become: true
+  roles:
+    - ping

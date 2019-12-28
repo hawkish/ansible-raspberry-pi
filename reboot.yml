@@ -2,4 +2,4 @@
 - hosts: raspberries
   become: true
   roles:
-    - upgrade
+    - reboot

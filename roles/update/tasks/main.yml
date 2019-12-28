@@ -1,0 +1,6 @@
+# This role is used to update the Raspberry.
+---
+- name: 'Update apt package cache'
+  become: yes
+  apt:
+    update_cache=yes
