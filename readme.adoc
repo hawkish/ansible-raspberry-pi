@@ -1,7 +1,19 @@
 = Notes for Ansible on Raspberry Pi
 
 == Ping
-`ansible-playbook -i hosts ping.yml`
+`ansible-playbook -k ping.yml`
+
+== Reboot
+`ansible-playbook -k reboot.yml`
+
+== Shutdown
+`ansible-playbook -k shutdown.yml`
+
+== Update
+`ansible-playbook -k update.yml`
+
+== Upgrade
+`ansible-playbook -k upgrade.yml`
 
 == Info
 `ansible all -i hosts --module-name=shell --args='vcgencmd measure_temp; vcgencmd measure_clock arm; vcgencmd get_throttled' --one-line | sort`
