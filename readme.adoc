@@ -20,5 +20,5 @@ This is a simple Ansible setup to do basic tasks on a Raspberry Pi. I'm using Ra
 == Info
 `ansible-playbook -k info.yml`
 
-= Troubleshooting
+=== Troubleshooting
 If you get any Ansible errors, add `-vvvv` to the command to increase verbosity. This will help a lot!
