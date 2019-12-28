@@ -1,4 +1,5 @@
 = Notes for Ansible on Raspberry Pi
+This is a simple Ansible setup to do basic tasks on a Raspberry Pi. I'm using Raspberry Pi 4.
 
 == Ping
 `ansible-playbook -k ping.yml`
