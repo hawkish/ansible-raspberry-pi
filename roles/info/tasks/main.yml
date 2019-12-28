@@ -1,0 +1,21 @@
+
+# Display various Raspberry info
+---
+- name: 'Get the CPU temperature of RPi'
+  shell: vcgencmd measure_temp
+  register: cpu_temp
+
+- name: 'Get the CPU clock'
+  shell: vcgencmd measure_clock arm
+  register: cpu_clock
+  
+- name: 'Print the CPU temperature and CPU clock'
+  debug:
+    msg: "{{ cpu_temp.stdout_lines }}, {{cpu_clock.stdout_lines}}"
+  when:
+    - cpu_temp is defined
+    - cpu_clock is defined
+
+
+
+

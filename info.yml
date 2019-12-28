@@ -1,0 +1,5 @@
+---
+- hosts: raspberries
+  become: true
+  roles:
+    - info
