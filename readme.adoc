@@ -17,3 +17,6 @@
 
 == Info
 `ansible all -i hosts --module-name=shell --args='vcgencmd measure_temp; vcgencmd measure_clock arm; vcgencmd get_throttled' --one-line | sort`
+
+= Troubleshooting
+If you get any Ansible errors, add `-vvvv` to the command to increase verbosity. This will help a lot!
