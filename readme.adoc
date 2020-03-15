@@ -30,6 +30,9 @@ This is a simple Ansible setup to do basic tasks on a Raspberry Pi. I'm using Ra
 == apt-get autoremove
 `ansible raspberries -m apt -a "autoremove=yes"`
 
+== Check for installed package
+`ansible raspberries -m shell -a 'dpkg -s docker-ce`
+
 == shell
 `ansible raspberries -m shell -a 'echo $PATH'`
 
