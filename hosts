@@ -1,23 +1,23 @@
 
 [raspberries]
-192.168.1.210 name=master 
-192.168.1.211 name=node1
-192.168.1.212 name=node2
-192.168.1.213 name=node3
+192.168.1.210 ansible_become=true ansible_become_user=root name=master 
+192.168.1.211 ansible_become=true ansible_become_user=root name=node1
+192.168.1.212 ansible_become=true ansible_become_user=root name=node2
+192.168.1.213 ansible_become=true ansible_become_user=root name=node3
 
 [master]
-192.168.1.210
+192.168.1.210 ansible_become=true ansible_become_user=root
 
 [slaves]
-192.168.1.211
-192.168.1.212
-192.168.1.213
+192.168.1.211 ansible_become=true ansible_become_user=root
+192.168.1.212 ansible_become=true ansible_become_user=root
+192.168.1.213 ansible_become=true ansible_become_user=root
 
 [node1]
-192.168.1.211
+192.168.1.211 ansible_become=true ansible_become_user=root
 
 [node2]
-192.168.1.212
+192.168.1.212 ansible_become=true ansible_become_user=root
 
 [node3]
-192.168.1.213
+192.168.1.213 ansible_become=true ansible_become_user=root
