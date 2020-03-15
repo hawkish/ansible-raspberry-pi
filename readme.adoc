@@ -22,13 +22,13 @@ This is a simple Ansible setup to do basic tasks on a Raspberry Pi. I'm using Ra
 
 = Useful commands without a playbook
 == apt-get install
-`ansible --become --become-user root raspberries -m apt -a "name=acme state=present"`
+`ansible raspberries -m apt -a "name=acme state=present"`
 
 == apt-get remove
-`ansible --become --become-user root raspberries -m apt -a "name=acme state=absent"`
+`ansible raspberries -m apt -a "name=acme state=absent"`
 
 == apt-get autoremove
-`ansible --become --become-user root raspberries -m apt -a "autoremove=yes"`
+`ansible raspberries -m apt -a "autoremove=yes"`
 
 === Troubleshooting
 If you get any Ansible errors, add `-vvvv` to the command to increase verbosity. This will help a lot!
